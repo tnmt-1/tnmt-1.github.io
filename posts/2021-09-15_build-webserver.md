@@ -1,0 +1,103 @@
+---
+title: "Amazon Linux 2 + Apache + Codeigniter4 でのWebサーバ構築"
+summary: "Amazon Linux 2 インスタンスに Apache HTTP Server と PHP8 をインストールしてWebサーバを構築します。"
+date: 2021-09-15T10:00:00+09:00
+categories: Tech
+tags:
+    - aws
+    - apache
+    - codeigniter4
+---
+
+Amazon Linux 2 インスタンスに Apache HTTP Server と PHP8 をインストールしてWebサーバを構築します。
+Codeigniter4のソースコードを利用したかったので、それ用に少しアレンジしています。
+
+### 環境
+
+- Amazon Linux 2 (EC2)
+- PHP 8.0.8
+- Apache HTTP Server 2.4
+- Codeigniter 4
+
+### 手順
+
+1. PHP 8 とApache HTTP Server をインストール
+    ```
+    $ sudo amazon-linux-extras enable php8.0
+    $ sudo yum install -y httpd php php-devel php-mysqlnd php-mbstring php-gd php-xml php-opcache php-pecl-zip php-pear php-intl mod_ssl
+    ```
+1. Apache HTTP Server を有効化 + 起動
+    ```
+    $ sudo systemctl enable httpd
+    $ sudo systemctl start httpd
+    ```
+1. ファイルの許可設定
+    ec2-user を apache グループに追加し、apache ディレクトリの所有権を /var/www グループに付与し、グループへの書き込み権限を割り当てます。
+    ```
+    $ sudo usermod -a -G apache ec2-user
+    $ exit
+    ```
+
+    再ログインして、グループが適用されているか確認する。
+    ```
+    $ groups
+    ```
+
+    `/var/www` 配下のグループと所有権を変更する。
+    ```
+    $ sudo chown -R ec2-user:apache /var/www
+    $ sudo chmod 2775 /var/www && find /var/www -type d -exec $ sudo chmod 2775 {} \;
+    $ find /var/www -type f -exec sudo chmod 0664 {} \;
+    ```
+1. (オプション) Composer のインストール
+    個人的に Composer を使いたかったのでインストールしています。
+    ```
+    $ sudo su -
+
+    # php -r "copy('https://getcomposer.org/installer', 'composer-setup.php');"
+    # php -r "if (hash_file('sha384', 'composer-setup.php') === '756890a4488ce9024fc62c56153228907f1545c228516cbf63f885e036d37e9a59d27d63f46af1d4d07ee0f76181c7d3') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+    # php composer-setup.php
+    # php -r "unlink('composer-setup.php');"
+    # mv composer.phar /usr/local/bin/composer
+    # chmod 777 /usr/local/bin/composer
+    ```
+1. SSL/TLS の設定
+    自己署名のデジタル証明書を使用して、Amazon Linux 2 で TLS をセットアップしてきます。
+
+    サーバーホスト用の自己署名 X.509 証明書とプライベートキーを生成するためのスクリプトを利用してセットアップします。
+    作成された `localhost.crt` には証明書とキーの両方が含まれています。
+    ```
+    # cd /etc/pki/tls/certs
+    # ./make-dummy-cert localhost.crt
+    ```
+
+    `/etc/httpd/conf.d/ssl.conf ` を編集します。
+    - `DocumentRoot "/var/www/html/public"` を追加
+    - `SSLCertificateKeyFile /etc/pki/tls/private/localhost.key` をコメントアウト
+
+    `/etc/httpd/conf.d/vhost.conf` を新規追加します（`vhost.conf` というファイル名でなくてもOK）。
+    ```conf
+    <Directory "/var/www/html">
+        AllowOverride All
+    </Directory>
+
+    <VirtualHost *:80>
+        DocumentRoot "/var/www/html/public"
+    </VirtualHost>
+    ```
+
+    完了したら `Apache HTTP Server` を再起動します。
+    ```
+    # systemctl restart httpd
+    # exit
+    ```
+1. Codeigniter プロジェクトを作成
+    ```
+    $ cd /var/www/
+    $ composer create-project codeigniter4/appstarter html
+    ```
+
+### 参考
+- [チュートリアル: Amazon Linux 2 に LAMP ウェブサーバーをインストールする](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/ec2-lamp-amazon-linux-2.html)
+- [チュートリアル: Amazon Linux 2 に SSL/TLS を設定する](https://docs.aws.amazon.com/ja_jp/AWSEC2/latest/UserGuide/SSL-on-amazon-linux-2.html)
+- [Amazon Linux 2 の Extras Library に PHP8.0 登場](https://e-kamo.net/amazon-linux-extras-php8-available)
