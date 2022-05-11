@@ -49,11 +49,11 @@ a#colorToggle:hover {
 }
 
 #color-scheme-light {
-  color: #FF8C00;
+  color: #ff8c00;
 }
 
 #color-scheme-dark {
-  color: #F9C270;
+  color: #f9c270;
 }
 
 blockquote {
@@ -63,4 +63,10 @@ blockquote {
   color: var(--color-text-secondary);
   border-left: 3px solid var(--color-text);
   background-color: var(--color-shadow);
+}
+
+table td,
+table th,
+table tr {
+  text-align: var(--justify-normal);
 }
