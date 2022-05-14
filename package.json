@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "export": "next export"
+    "export": "next build && next export"
   },
   "dependencies": {
     "@react-icons/all-files": "^4.1.0",
