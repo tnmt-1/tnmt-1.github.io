@@ -7,7 +7,7 @@ on:
     - main
   workflow_run:
     workflows:
-      - first-workflow
+      - import
     branches:
       - main
     types:
