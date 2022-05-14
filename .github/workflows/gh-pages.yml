@@ -32,6 +32,11 @@ jobs:
     - name: install
       run: npm install --frozen-lockfile
 
+    # Next.jsアプリをビルドする
+    # プロジェクトルート直下に.nextディレクトリができる
+    - name: build
+      run: npm run build
+
     # 静的なHTMLとしてNext.jsアプリを生成する
     # プロジェクトルート直下にoutディレクトリができる
     # そのなかに、HTMLファイル群と、それらが読み込むJSファイル群を収めた_nextディレクトリがある
