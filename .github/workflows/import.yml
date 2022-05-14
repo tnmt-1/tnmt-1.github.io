@@ -17,7 +17,7 @@ jobs:
         with:
           service_account: ${{ secrets.GOOGLE_SERVICE_ACCOUNT }}
           workload_identity_provider: ${{ secrets.GOOGLE_WORKLOAD_IDENTITY_PROVIDER }}
-      - uses: r7kamura/google-docs-to-github@v3
+      - uses: r7kamura/google-docs-to-github@main
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           google_drive_folder_id: ${{ secrets.GOOGLE_DRIVE_FOLDER_ID }}
@@ -27,7 +27,9 @@ jobs:
           cache: npm
       - run: npm install
       - run: npm run build
-      - run: npm run export
+      - run: ARTICLES_DIRECTORY_PATHS=./output npm run export
+      - name: add nojekyll
+        run: touch ./out/.nojekyll
       - uses: peaceiris/actions-gh-pages@v3
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
