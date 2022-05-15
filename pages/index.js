@@ -11,7 +11,7 @@ export default function Home({ blog }) {
       <main>
         {blog.map((blog) => (
           <div key={blog.id} style={listBlockStyle}>
-            <small><time dateString={blog.publishedAt}>{blog.publishedAt}</time></small>
+            <small><time datestring={blog.publishedAt}>{blog.publishedAt}</time></small>
             <div>
               <Link href={`/posts/${blog.id}`}>
                 <a>{blog.title}</a>

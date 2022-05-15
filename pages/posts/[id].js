@@ -9,7 +9,7 @@ export default function BlogId({ blog }) {
     <main>
       <NextSeo title={`${blog.title}`} description={description} />
       <h1>{blog.title}</h1>
-      <small><time dateString={blog.publishedAt}>{blog.publishedAt}</time></small>
+      <small><time datestring={blog.publishedAt}>{blog.publishedAt}</time></small>
       <article
         dangerouslySetInnerHTML={{
           __html: `${blog.body}`,
