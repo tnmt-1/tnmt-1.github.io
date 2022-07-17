@@ -1,15 +1,12 @@
 import { Html, Head, Main, NextScript } from 'next/document'
 import Link from "next/link";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
-import { BsSun } from "@react-icons/all-files/bs/BsSun"
-import { BsMoon } from "@react-icons/all-files/bs/BsMoon"
+import { BsFillFilePersonFill } from "react-icons/bs"
 
 export default function Document() {
   return (
     <Html>
-      <Head>
-        <script src="/static/js/main.js" defer></script>
-      </Head>
+      <Head></Head>
       <body>
         <header>
           <nav>
@@ -17,13 +14,12 @@ export default function Document() {
             <ul>
               <li>
                 <h2>
-                  <a href="https://twitter.com/mt2m10" target="_blank" rel="noreferrer" id="twitter"><FaTwitter /></a>
+                  <Link href="/profile"><a><BsFillFilePersonFill /></a></Link>
                 </h2>
               </li>
               <li>
                 <h2>
-                  <a href="#" className="colorToggle" id="color-scheme-light" style={{display: "none"}} ><BsSun /></a>
-                  <a href="#" className="colorToggle" id="color-scheme-dark" style={{display: "none"}} ><BsMoon /></a>
+                  <a href="https://twitter.com/mt2m10" target="_blank" rel="noreferrer" id="twitter"><FaTwitter /></a>
                 </h2>
               </li>
             </ul>
