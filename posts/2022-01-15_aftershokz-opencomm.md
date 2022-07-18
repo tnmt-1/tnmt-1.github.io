@@ -10,8 +10,7 @@ tags:
 1月の初めにAmazonセールでAfterShokzのOPENCOMMが安くなってたので購入しました！
 19998円 → 14998円
 
-![PXL_20220106_103308519](https://i.gyazo.com/f882bd7a222465e7c20c0d565787379d.jpg)
-![PXL_20220106_102948612](https://i.gyazo.com/191074b0fe29165c71967c6dbc5e2085.jpg)
+![PXL_20220106_103308519](https://i.gyazo.com/f882bd7a222465e7c20c0d565787379d.jpg)![PXL_20220106_102948612](https://i.gyazo.com/191074b0fe29165c71967c6dbc5e2085.jpg)
 
 骨伝導イヤホンは同社のOPENMOVEを2ヶ月前に買って使い心地が良かったので、今回はWeb会議用に購入。仕事のミーティングや転職の面接で使っていますが今のところ問題はなさそう。
 
