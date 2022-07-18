@@ -16,7 +16,7 @@ API Gateway を使ってバイナリデータを返却する場合、設定が�
 
 細かいこと書くのがめんどうなので図にしました。
 
-![occurrence.png](https://dsm01pap001files.storage.live.com/y4mIv945BbjauH35T-tREJzF2lzwfmAwJ6T9kWF2ZR2DkNnxIeJl9D-8Y9qOIjSNcRf96KScFwqmbJbWBJgb6TG6J2moLi-xerMaIJv-5Cbc8oYIFoAhjlOiQrg2kaI-1KkQg-huNwgrVuJHs9a3lx17IRNzQb-I_MQLspoaAdTEhiJ_EthWUjhWkLdZZAyl3Gr?encodeFailures=1&width=589&height=211)
+![occurrence.png](https://i.gyazo.com/7b088e7b34c6a0634e27394e132bd8f6.png)
 
 ### やったこと
 
