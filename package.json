@@ -26,9 +26,5 @@
     "remark-toc": "^8.0.1",
     "striptags": "^3.2.0",
     "unified": "^10.1.2"
-  },
-  "devDependencies": {
-    "eslint": "8.15.0",
-    "eslint-config-next": "12.1.6"
   }
 }
