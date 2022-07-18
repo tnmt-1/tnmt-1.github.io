@@ -42,3 +42,8 @@ table th,
 table tr {
   text-align: var(--justify-normal);
 }
+
+img {
+  width: auto;
+  max-height: 370px;
+}
