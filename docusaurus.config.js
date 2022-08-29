@@ -23,7 +23,7 @@ const config = {
   // metadata like html lang. For example, if your site is Chinese, you may want
   // to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'ja',
     locales: ['en'],
   },
 
@@ -166,7 +166,8 @@ const config = {
         tokenizerSeparator: /[\s\-\u{3000}-\u{301C}\u{3041}-\u{3093}\u{309B}-\u{309E}]+/gu
       }
     }]
-  ]
+  ],
+  titleDelimiter: "🍺"
 };
 
 module.exports = config;
