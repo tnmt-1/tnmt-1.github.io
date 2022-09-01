@@ -42,6 +42,7 @@ const config = {
           blogDescription: 'mt2m10 powered blog!',
           blogSidebarTitle: 'All posts',
           blogSidebarCount: 'ALL',
+          postsPerPage: 1,
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
