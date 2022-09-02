@@ -58,7 +58,11 @@ const config = {
       {
         changefreq: 'weekly',
         priority: 0.5,
-        ignorePatterns: ['/tags/**'],
+        ignorePatterns: [
+          'https://mt2m10.github.io/tags/**',
+          'https://mt2m10.github.io/about',
+          'https://mt2m10.github.io/carrer'
+        ],
         filename: 'sitemap.xml',
       },
     ],
