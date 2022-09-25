@@ -37,11 +37,10 @@ const config = {
         },
         blog: {
           showReadingTime: true,
-          routeBasePath: '/',
+          routeBasePath: '/blog',
           blogTitle: 'mt2m10 blog!',
           blogDescription: 'mt2m10 powered blog!',
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
+          blogSidebarCount: 0,
           postsPerPage: 1,
         },
         theme: {
@@ -80,15 +79,11 @@ const config = {
           {
             type: 'doc',
             docId: 'about',
-            position: 'left',
-            label: 'About',
+            position: 'right',
+            label: 'Profile',
           },
-          { to: '/', label: 'Blog', position: 'left' },
-          // {
-          //   href: 'https://github.com/facebook/docusaurus',
-          //   label: 'GitHub',
-          //   position: 'right',
-          // },
+          { to: '/blog', label: 'Blog', position: 'left' },
+          { to: '/blog/archive', label: 'Archives', position: 'left' },
         ],
       },
       footer: {
