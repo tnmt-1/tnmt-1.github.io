@@ -176,7 +176,7 @@ const config = {
       }
     }]
   ],
-  titleDelimiter: "🍺"
+  titleDelimiter: "🍻"
 };
 
 module.exports = config;
