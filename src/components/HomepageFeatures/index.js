@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Welcome!',
-    img: 'assets/images/Tumblr_l_156843609962041-1f9e189066821636c4c29fd172d166b6.gif',
+    img: '/img/Tumblr_l_156843609962041.gif',
     description: (
       <>
         <p>
