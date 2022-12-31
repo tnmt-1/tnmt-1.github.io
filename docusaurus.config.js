@@ -24,7 +24,7 @@ const config = {
   // to replace "en" with "zh-Hans".
   i18n: {
     defaultLocale: 'ja',
-    locales: ['en'],
+    locales: ['ja'],
   },
 
   presets: [
@@ -157,7 +157,7 @@ const config = {
       indexPages: true,
 
       // language of your documentation, see next section
-      language: ["en", "ja"],
+      language: ["ja"],
 
       hashed: "query",
     }]
