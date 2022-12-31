@@ -8,7 +8,7 @@ const darkCodeTheme = require('prism-react-renderer/themes/dracula');
 const config = {
   title: 'mt2m10',
   tagline: 'Dinosaurs are cool',
-  url: 'https://mt2m10.github.io',
+  url: 'https://blog-mt2m10.vercel.app',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -16,8 +16,8 @@ const config = {
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'mt2m10', // Usually your GitHub org/user name.
-  projectName: 'mt2m10.github.io', // Usually your repo name.
+  // organizationName: 'mt2m10', // Usually your GitHub org/user name.
+  // projectName: 'mt2m10.github.io', // Usually your repo name.
 
   // Even if you don't use internalization, you can use this field to set useful
   // metadata like html lang. For example, if your site is Chinese, you may want
@@ -47,7 +47,7 @@ const config = {
           customCss: require.resolve('./src/css/custom.css'),
         },
         gtag: {
-          trackingID: 'G-FTSK23J86W',
+          trackingID: 'G-9JQ9W0NW68',
           anonymizeIP: true,
         },
       }),
