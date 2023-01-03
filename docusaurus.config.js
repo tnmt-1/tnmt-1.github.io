@@ -80,14 +80,19 @@ async function config() {
             src: 'img/beer.png',
           },
           items: [
+            { to: '/blog', label: 'Blog', position: 'left' },
+            { to: '/blog/archive', label: 'Archives', position: 'left' },
             {
               type: 'doc',
               docId: 'about',
               position: 'right',
               label: 'Profile',
             },
-            { to: '/blog', label: 'Blog', position: 'left' },
-            { to: '/blog/archive', label: 'Archives', position: 'left' },
+            {
+              to: '/policy',
+              position: 'right',
+              label: 'Policy',
+            },
           ],
         },
         footer: {
