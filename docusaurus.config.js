@@ -147,7 +147,7 @@ async function config() {
         },
         colorMode: {
           defaultMode: 'dark',
-          disableSwitch: false,
+          disableSwitch: true,
           respectPrefersColorScheme: false,
         },
         metadata: [{ name: 'twitter:card', content: 'summary' }],
