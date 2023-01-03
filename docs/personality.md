@@ -2,6 +2,7 @@
 title: 性格
 description: 私のパーソナリティについて書いています。
 sidebar_position: 4
+draft: true
 ---
 
 [16Personalities 性格診断テスト](https://www.16personalities.com/ja)で診断した結果は「擁護者型 (ISFJ)」でした。自分的にはすごく共感できた内容でした。8割ぐらい合ってるので、だいたい下記の内容を読んでくれれば分かります。

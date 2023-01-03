@@ -2,6 +2,7 @@
 title: プライベート
 description: 私の趣味などについて書いています。
 sidebar_position: 5
+draft: true
 ---
 
 ## 趣味
