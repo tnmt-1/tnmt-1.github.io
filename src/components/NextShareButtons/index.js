@@ -13,7 +13,6 @@ import {
 } from "next-share";
 
 import styles from "./styles.module.css";
-import { useDebounce } from "@site/src/libs/debounce";
 
 const HashTag = "mahlog";
 
@@ -74,15 +73,13 @@ const MomoizedSocialButtons = React.memo(function SocialButtons({
 const NextShareButtons = ({ href = "", title = "" }) => {
   const [url, setUrl] = useState(href);
   const [subject, setSubject] = useState(title);
-  const debounce = useDebounce(200);
-  const handleEvent = () =>
-    debounce(() => {
-      const { origin, pathname, search } = window.location;
-      const newUrl = [origin, pathname, search].join("");
-      if (newUrl !== url) {
-        setUrl(newUrl);
-      }
-    });
+  const handleEvent = () => {
+    const { origin, pathname, search } = window.location;
+    const newUrl = [origin, pathname, search].join("");
+    if (newUrl !== url) {
+      setUrl(newUrl);
+    }
+  };
 
   useEffect(() => {
     // title が指定されていないとき， document からページタイトルを持ってくる
