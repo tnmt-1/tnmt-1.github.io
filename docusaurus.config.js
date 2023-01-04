@@ -48,6 +48,9 @@ async function config() {
             remarkPlugins: [remarkBreaks],
             blogSidebarTitle: "最近の投稿"
           },
+          pages: {
+            beforeDefaultRemarkPlugins: [remarkBreaks],
+          },
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
           },
@@ -84,8 +87,7 @@ async function config() {
             { to: '/', label: 'Blog', position: 'left' },
             { to: '/archive', label: 'Archives', position: 'left' },
             {
-              type: 'doc',
-              docId: 'about',
+              to: '/about',
               position: 'right',
               label: 'Profile',
             },
@@ -139,7 +141,7 @@ async function config() {
             //   ],
             // },
           ],
-          copyright: `Copyright © ${new Date().getFullYear()} mt2m10, Inc. Built with Docusaurus.`,
+          copyright: `Copyright © ${new Date().getFullYear()} mahlog, Inc. Built with Docusaurus.`,
         },
         prism: {
           theme: lightCodeTheme,

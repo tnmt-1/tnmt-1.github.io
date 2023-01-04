@@ -1,0 +1,257 @@
+import "../css/about.css";
+
+## このサイトについて
+
+日々の生活やプログラミングに関する情報を発信するウェブサイトです。
+
+## 管理人
+
+ITエンジニア。
+システム設計、フロントエンド開発、バックエンド開発をメインに活動しています。
+
+1987年生まれ。
+浪人して大学（文系）に入りましたが、勉強をしなかったため留年しました。その後、IT業種で就職先を探して、未経験ITエンジニアとして働くこととなりました。
+
+ビールが好きです。
+
+## スキル
+
+### 言語
+
+<LanguageLabel label="PHP" imagePath="/img/logo-php.png" />
+<LanguageLabel label="Java" imagePath="/img/logo-java.png" />
+<LanguageLabel label="Python" imagePath="/img/logo-python.png" />
+<LanguageLabel label="HTML" imagePath="/img/logo-html.png" />
+<LanguageLabel label="CSS" imagePath="/img/logo-css.png" />
+<LanguageLabel label="JavaScript" imagePath="/img/logo-js.png" />
+
+### フレームワーク
+
+<FrameworkLabel label="CodeIgniter" imagePath="/img/logo-codeigniter.png" />
+<FrameworkLabel label="Java EE" imagePath="/img/logo-javaee.png" />
+<FrameworkLabel label="Spring" imagePath="/img/logo-spring.png" />
+<FrameworkLabel label="iBatis" imagePath="/img/logo-ibatis.png" />
+<FrameworkLabel label="jQuery" imagePath="/img/logo-jquery.png" />
+<FrameworkLabel label="React.js" imagePath="/img/logo-reactjs.png" />
+<FrameworkLabel label="Next.js" imagePath="/img/logo-nextjs.webp" />
+<FrameworkLabel label="Bootstrap" imagePath="/img/logo-bootstrap.png" />
+<FrameworkLabel label="Bulma" imagePath="/img/logo-bulma.webp" />
+<FrameworkLabel label="chalice" imagePath="/img/logo-chalice.png" />
+
+### データベース
+
+<DatabaseLabel label="Oracle" imagePath="/img/logo-oracle.png" />
+<DatabaseLabel label="PostgresSQL" imagePath="/img/logo-postgresql.png" />
+
+### クラウド
+
+<CloudLabel label="AWS" imagePath="/img/logo-aws.png" />
+
+### 資格
+
+| 資格名                                        | 取得時期 |
+| --------------------------------------------- | -------- |
+| AWS Certified Solutions Architect - Associate | 2022-07  |
+| AWS Cloud Practitioner                        | 2022-05  |
+| Oracle Master Bronze                          | 2019-11  |
+| LPIC Level-1                                  | 2019-09  |
+| 応用情報技術者試験                            | 2019-06  |
+| Java 8 Gold                                   | 2017-11  |
+
+## 経歴
+
+- 1社目 SES
+- 2社目 受託開発
+
+:::info
+全部書いてると大変なので、案件の期間が長かったもののみ記載します。
+:::
+
+<CareerSubTitle title="現職 [2018.04 - now]" />
+
+<CareerPage
+  title="公共向けコンテンツ提供サービス"
+  start="2021.04"
+  end="now"
+  roles={["PL"]}
+  contents={[
+    "システム要件の検討、調整",
+    "要件定義書作成、説明資料などのドキュメント作成",
+    "基本設計の作成",
+    "システム開発",
+  ]}
+  skills={["React.js", "Next.js", "Python", "Chalice", "PostgreSQL", "AWS"]}
+/>
+
+<CareerPage
+  title="銀行向けKYC情報回答システム"
+  start="2020.04"
+  end="2021-01"
+  roles={["PL"]}
+  contents={[
+    "基本設計、開発、単体テスト、結合テスト",
+    "お客さんへの設計説明、説明資料などのドキュメント作成",
+  ]}
+  skills={["PHP 7.3", "CodeIgniter 3", "jQuery 1.12.4", "PostgreSQL 9.2"]}
+/>
+
+<CareerPage
+  title="銀行向け口座開設情報点検システム"
+  start="2018.04"
+  end="2020-03"
+  roles={["開発メンバー"]}
+  contents={[
+    "基本設計、開発、単体テスト、結合テスト",
+    "お客さんへの設計説明、説明資料などのドキュメント作成",
+    "運用保守",
+  ]}
+  skills={["PHP 7.1", "CodeIgniter 3", "jQuery 1.12.4", "PostgreSQL 9.6"]}
+/>
+
+<CareerSubTitle title="前職 [2012.04 - 2018.03]" />
+
+<CareerPage
+  title="販売管理PKGアドオン開発・導入"
+  start="2016.06"
+  end="2017-09"
+  roles={["テストメンバー", "移行メンバー", "保守メンバー"]}
+  contents={[
+    "単体試験仕様書作成・実施",
+    "結合試験仕様書作成・実施",
+    "総合試験実施",
+    "移行手順書作成・実施",
+    "保守（問い合わせ対応）",
+    "保守（不具合改修）",
+    "保守（障害時のデータパッチ作成・実施）",
+  ]}
+  skills={["PHP 5.6", "Oracle 12c"]}
+/>
+
+<CareerPage
+  title="レンタル利用者向け物流管理システム"
+  start="2013.10"
+  end="2016-05"
+  roles={["開発メンバー", "保守メンバー"]}
+  contents={[
+    "基本設計書修正",
+    "詳細設計書作成・修正",
+    "プログラム作成",
+    "単体試験仕様書作成・実施",
+    "結合試験実施",
+    "保守（問い合わせ対応）",
+    "保守（不具合改修）",
+    "保守（障害時のデータパッチ作成・実施）",
+    "他ベンダーへの引継ぎ作業",
+  ]}
+  skills={["Java 7", "Oracle", "jQuery"]}
+/>
+
+export function BasicLabel({ label, imagePath }) {
+  const boxStyle = {
+    fontSize: 16,
+    fontWeight: "bold",
+    display: "inline-block",
+    margin: "20px",
+    height: "200px",
+  };
+  const imageAreaStyle = {
+    marginBottom: "20px",
+    paddingBottom: "10px",
+    height: "110px",
+    display: "flex",
+    alignItems: "center",
+  };
+  const labelAreaStyle = {
+    textAlign: "center",
+  };
+  const imageStyle = {
+    width: "100px",
+    maxHeight: "100%",
+  };
+  return (
+    <div style={boxStyle}>
+      <div style={imageAreaStyle}>
+        <img src={imagePath} alt="no image" style={imageStyle} />
+      </div>
+      <div style={labelAreaStyle}>{label}</div>
+    </div>
+  );
+}
+
+export function LanguageLabel({ label, imagePath }) {
+  return <BasicLabel label={label} imagePath={imagePath} />;
+}
+
+export function FrameworkLabel({ label, imagePath }) {
+  return <BasicLabel label={label} imagePath={imagePath} />;
+}
+
+export function DatabaseLabel({ label, imagePath }) {
+  return <BasicLabel label={label} imagePath={imagePath} />;
+}
+
+export function CloudLabel({ label, imagePath }) {
+  return <BasicLabel label={label} imagePath={imagePath} />;
+}
+
+export function CareerPage({ title, start, end, roles, contents, skills }) {
+  const sectionStyle = {
+    border: "1px solid rgb(255, 255, 255, 0.2)",
+    borderRadius: "10px",
+    margin: "10px",
+    padding: "30px",
+  };
+  const dateStyle = {
+    marginBottom: "20px",
+    display: "inline-block",
+  };
+  return (
+    <section style={sectionStyle}>
+      <h3 id={title}>{title}</h3>
+      <small style={dateStyle}>
+        {start} - {end}
+      </small>
+      <h4>役割</h4>
+      <ul>
+        {roles.map((role) => {
+          return <li key={role}>{role}</li>;
+        })}
+      </ul>
+      <h4>内容</h4>
+      <ul>
+        {contents.map((content) => {
+          return <li key={content}>{content}</li>;
+        })}
+      </ul>
+      <h4>技術・開発</h4>
+      {skills.map((skill) => {
+        return <CareerSkill key={skill} label={skill} />;
+      })}
+    </section>
+  );
+}
+
+export function CareerSkill({ label }) {
+  const style = {
+    fontSize: "85%",
+    border: "1px solid rgb(255, 255, 255, 0.2)",
+    borderRadius: "20px",
+    textAlign: "center",
+    display: "inline-block",
+    padding: "5px 10px",
+    backgroundColor: "#d4b10a",
+    color: "#000",
+    fontWeight: "bold",
+    marginRight: "15px",
+  };
+  return <div style={style}>{label}</div>;
+}
+
+export function CareerSubTitle({ title }) {
+  const style = {
+    borderBottom: "1px solid rgb(255, 255, 255, 0.4)",
+    paddingBottom: "5px",
+    marginTop: "60px",
+  };
+  return <h3 style={style}>{title}</h3>;
+}

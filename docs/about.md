@@ -2,6 +2,7 @@
 title: プロフィール
 description: 私の簡単な自己紹介を書いています。
 sidebar_position: 1
+draft: true
 ---
 
 ITエンジニア

@@ -2,6 +2,7 @@
 title: 経歴
 description: 業務経歴です。
 sidebar_position: 3
+draft: true
 ---
 
 IT には興味あったのでその業種で就職先を探して、未経験 IT エンジニアとして働くこととなりました。
