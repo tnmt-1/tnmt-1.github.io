@@ -8,8 +8,8 @@ async function config() {
   const remarkBreaks = (await import('remark-breaks')).default;
 
   return {
-    title: 'mt2m10',
-    tagline: 'Dinosaurs are cool',
+    title: 'mahlog',
+    tagline: 'mahlog are cool',
     url: 'https://blog-mt2m10.vercel.app',
     baseUrl: '/',
     onBrokenLinks: 'throw',
@@ -40,12 +40,13 @@ async function config() {
           },
           blog: {
             showReadingTime: true,
-            routeBasePath: '/blog',
-            blogTitle: 'mt2m10 blog!',
-            blogDescription: 'mt2m10 powered blog!',
-            blogSidebarCount: 0,
-            postsPerPage: 1,
-            remarkPlugins: [remarkBreaks]
+            routeBasePath: '/',
+            blogTitle: 'mahlog!',
+            blogDescription: 'mahlog powered blog!',
+            blogSidebarCount: 10,
+            postsPerPage: 5,
+            remarkPlugins: [remarkBreaks],
+            blogSidebarTitle: "最近の投稿"
           },
           theme: {
             customCss: require.resolve('./src/css/custom.css'),
@@ -74,14 +75,14 @@ async function config() {
       /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
       ({
         navbar: {
-          title: 'mt2m10',
+          title: 'mahlog',
           logo: {
             alt: 'My Site Logo',
             src: 'img/beer.png',
           },
           items: [
-            { to: '/blog', label: 'Blog', position: 'left' },
-            { to: '/blog/archive', label: 'Archives', position: 'left' },
+            { to: '/', label: 'Blog', position: 'left' },
+            { to: '/archive', label: 'Archives', position: 'left' },
             {
               type: 'doc',
               docId: 'about',
