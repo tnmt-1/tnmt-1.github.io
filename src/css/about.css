@@ -1,4 +1,7 @@
-h2 {
+h2[id="このサイトについて"],
+h2[id="スキル"],
+h2[id="管理人"],
+h2[id="経歴"] {
     border-left: 3px solid;
     border-bottom: 1px solid;
     padding: 0 0 5px 15px;
