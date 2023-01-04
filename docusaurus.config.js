@@ -34,10 +34,7 @@ async function config() {
         'classic',
         /** @type {import('@docusaurus/preset-classic').Options} */
         ({
-          docs: {
-            sidebarPath: require.resolve('./sidebars.js'),
-            remarkPlugins: [remarkBreaks]
-          },
+          docs: false,
           blog: {
             showReadingTime: true,
             routeBasePath: '/',
@@ -159,7 +156,7 @@ async function config() {
     plugins: [
       [require.resolve('@easyops-cn/docusaurus-search-local'), {
         // whether to index docs pages
-        indexDocs: true,
+        indexDocs: false,
 
         // whether to index blog pages
         indexBlog: true,
