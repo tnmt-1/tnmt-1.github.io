@@ -10,7 +10,7 @@ async function config() {
   return {
     title: 'mahlog',
     tagline: 'mahlog are cool',
-    url: 'https://blog-mt2m10.vercel.app',
+    url: 'https://blog.mah.blue',
     baseUrl: '/',
     onBrokenLinks: 'throw',
     onBrokenMarkdownLinks: 'warn',
