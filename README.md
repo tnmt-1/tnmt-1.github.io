@@ -1,6 +1,26 @@
-# mt2mo10.github.io
+# tnmt-1.github.io
 
-I will write about daily events and programming related matters.
+日々の出来事やプログラミング関連のことなどを書いていきます。
 
-My GitHub Pages is made with Docusaurus.
-If you create an md files in the blog directory, you can read articles from GitHub Pages.
+## 環境
+
+- Python3
+- rye
+  - mkdocsです。
+- node
+  - Markdownのフォーマットに使います
+
+## インストール
+
+```
+rye sync
+npm i
+```
+
+## サーバ実行
+
+```
+rye run mkdocs serve
+```
+
+http::localhost:8000 で確認できます。

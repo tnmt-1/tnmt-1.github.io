@@ -1,12 +1,1 @@
----
-title: プロフィール
-description: 私の簡単な自己紹介を書いています。
-sidebar_position: 1
-draft: true
----
-
-ITエンジニア
-
-新卒未経験でIT業界へ。経歴10年ぐらい。
-直近1年ぐらいは、システム設計・アーキテクチャ設計をメインに仕事してます。
-ビールと日本酒好き。
+[Scrapbox](https://scrapbox.io/tnmt-note/About_Me)を見てください。
