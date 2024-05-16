@@ -140,7 +140,7 @@ CMakeLists.txt.user
 .idea/
 
 # Visual Studio Code
-.vscode/
+.vscode/*
 
 # Sublime Text
 .sublime-project
@@ -152,9 +152,10 @@ CMakeLists.txt.user
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-.vscode/
+.vscode/*
 .vs/
 _*/
+!.vscode/settings.json
 
 # Node
 node_modules/
