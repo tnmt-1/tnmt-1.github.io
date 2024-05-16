@@ -1,27 +1,33 @@
-site_name: My Docs
+site_name: tnmt
+repo_url: https://github.com/tnmt-1/tnmt-1.github.io
+repo_name: tnmt-1.github.io
+copyright: Copyright &copy; tnmt
+
+# テーマ
 theme:
     name: material
+    custom_dir: overrides
     language: ja
     features:
         - announce.dismiss
         # - content.action.edit
-        - content.action.view
+        # - content.action.view
         - content.code.annotate
         - content.code.copy
-        # - content.code.select
-        # - content.footnote.tooltips
-        # - content.tabs.link
+        - content.code.select
+        - content.footnote.tooltips
+        - content.tabs.link
         - content.tooltips
         # - header.autohide
-        # - navigation.expand
+        - navigation.expand
         - navigation.footer
         - navigation.indexes
         - navigation.instant
         - navigation.instant.prefetch
         - navigation.instant.progress
-        # - navigation.prune
+        - navigation.prune
         - navigation.sections
-        - navigation.tabs
+        # - navigation.tabs
         # - navigation.tabs.sticky
         - navigation.top
         - navigation.tracking
@@ -30,7 +36,7 @@ theme:
         # - search.share
         - search.suggest
         - toc.follow
-        - toc.integrate
+        # - toc.integrate
     palette:
         - media: "(prefers-color-scheme)"
           toggle:
@@ -50,50 +56,60 @@ theme:
           toggle:
               icon: material/weather-sunny
               name: Switch to system preference
+
+# ナビから除外
 not_in_nav: |
     /tags.md
+
+# プラグイン
 plugins:
     - search:
-          # 日本語検索対応
-          separator: '[\s\-\.]+'
+          lang: "ja"
     - tags:
           tags_file: tags.md
     - blog:
           enabled: true
           archive: true
+    - glightbox
+
+# マークダウン拡張
 markdown_extensions:
     - attr_list
-    # コードハイライト
     - pymdownx.highlight:
           linenums_style: pymdownx-inline
           anchor_linenums: true
           use_pygments: true
           linenums: true
-    # インラインハイライト
     - pymdownx.inlinehilite
-    # アラート修飾
     - admonition
-    # スーパーフェンス機能
+    - pymdownx.details
+    - def_list
+    - footnotes
+    - tables
+    - pymdownx.emoji:
+          emoji_index: !!python/name:material.extensions.emoji.twemoji
+          emoji_generator: !!python/name:materialx.emoji.to_svg
+    - pymdownx.tabbed:
+          alternate_style: true
     - pymdownx.superfences:
           custom_fences:
               - name: mermaid
                 class: mermaid
-                format:
-                    !!python/name:pymdownx.superfences.fence_code_format # コンテンツの折りたたみ
+                format: !!python/name:pymdownx.superfences.fence_code_format
+    - md_in_html
+    - toc:
+          permalink: true
 
-
-    - pymdownx.details
-    # 定義リスト
-    - def_list
-    # 注釈
-    - footnotes
-    # グリッド表示
-    - tables
-    # 絵文字
-    - pymdownx.emoji
-    # タブ化
-    - pymdownx.tabbed:
-          alternate_style: true
+# 拡張CSS
 extra_css:
     - stylesheets/extra.css
-copyright: Copyright &copy; tnmt
+
+# 拡張
+extra:
+    social:
+        - icon: fontawesome/brands/mastodon
+          link: https://misskey.systems/@tnmt
+          name: tnmt on Misskey
+        - icon: fontawesome/brands/tumblr
+          link: https://tumblr.com/tnmt-1
+          name: tnmt on Tumblr
