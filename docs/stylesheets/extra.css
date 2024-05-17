@@ -1,4 +1,5 @@
-:root, [data-md-color-scheme="default"] {
+:root,
+[data-md-color-scheme="default"] {
     --md-text-font: Inter, 源柔ゴシックL, Roboto, sans-serif;
     --md-code-font: Ubuntu mono, Roboto mono;
 
@@ -6,14 +7,6 @@
     --md-primary-fg-color--light: #adc541;
     --md-primary-fg-color--dark: #9bb029;
     --md-accent-fg-color: #54780d;
-}
-
-/* ブログ一覧の文字を少し小さめに */
-.md-post__content.md-typeset {
-    -webkit-print-color-adjust: exact;
-    color-adjust: exact;
-    font-size: 0.6rem;
-    line-height: 1.6;
 }
 
 [data-md-color-scheme="slate"] {
