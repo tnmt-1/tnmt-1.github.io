@@ -11,6 +11,7 @@ dependencies = [
     "pymdown-extensions>=10.8.1",
     "mkdocs-glightbox>=0.4.0",
     "mkdocs-rss-plugin>=1.12.2",
+    "mkdocs-mermaid2-plugin>=1.1.1",
 ]
 readme = "README.md"
 requires-python = ">= 3.8"
