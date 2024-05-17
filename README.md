@@ -6,21 +6,18 @@
 
 - Python3
 - rye
-  - mkdocsです。
-- node
-  - Markdownのフォーマットに使います
+    - mkdocsです。
 
 ## インストール
 
-```
+```shell
 rye sync
-npm i
 ```
 
 ## サーバ実行
 
-```
+```shell
 rye run mkdocs serve
 ```
 
-http::localhost:8000 で確認できます。
+<http::localhost:8000> で確認できます。
