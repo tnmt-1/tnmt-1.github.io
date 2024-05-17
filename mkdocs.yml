@@ -1,4 +1,5 @@
 site_name: tnmt
+site_url: https://tnmt-1.github.io/
 repo_url: https://github.com/tnmt-1/tnmt-1.github.io
 repo_name: tnmt-1.github.io
 copyright: Copyright &copy; tnmt
@@ -70,6 +71,13 @@ plugins:
     - blog:
           enabled: true
           archive: true
+    - rss:
+          match_path: blog/posts/.*
+          date_from_meta:
+              as_creation: date
+          categories:
+              - categories
+              - tags
     - glightbox
 
 # マークダウン拡張
