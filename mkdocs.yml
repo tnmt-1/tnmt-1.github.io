@@ -7,6 +7,7 @@ copyright: Copyright &copy; tnmt
 # テーマ
 theme:
     name: material
+    custom_dir: overrides
     language: ja
     features:
         - announce.dismiss
