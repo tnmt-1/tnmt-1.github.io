@@ -29,7 +29,7 @@ theme:
         - navigation.instant.progress
         - navigation.prune
         - navigation.sections
-        # - navigation.tabs
+        - navigation.tabs
         # - navigation.tabs.sticky
         - navigation.top
         - navigation.tracking
@@ -38,12 +38,20 @@ theme:
         # - search.share
         - search.suggest
         - toc.follow
-        # - toc.integrate
+        - toc.integrate
     palette:
         scheme: default
         primary: custom
         accent: custom
     logo: assets/images/logo.png
+
+# ナビ
+nav:
+    - 🏠 Home:
+          - index.md
+          - about.md
+    - 📝 Blog:
+          - ...
 
 # ナビから除外
 not_in_nav: |
@@ -66,6 +74,7 @@ plugins:
               - categories
               - tags
     - glightbox
+    - awesome-pages
 
 # マークダウン拡張
 markdown_extensions:
@@ -83,7 +92,7 @@ markdown_extensions:
     - tables
     - pymdownx.emoji:
           emoji_index: !!python/name:material.extensions.emoji.twemoji
-          emoji_generator: !!python/name:materialx.emoji.to_svg
+          emoji_generator: !!python/name:material.extensions.emoji.to_svg
     - pymdownx.tabbed:
           alternate_style: true
     - pymdownx.superfences:
