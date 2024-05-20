@@ -1,5 +1,4 @@
-:root,
-[data-md-color-scheme="default"] {
+:root {
     --md-text-font: Inter, 源柔ゴシックL, Roboto, sans-serif;
     --md-code-font: Ubuntu mono, Roboto mono;
 
@@ -9,7 +8,8 @@
     --md-accent-fg-color: #54780d;
 }
 
-[data-md-color-scheme="slate"] {
+/* [data-md-color-scheme="slate"] { */
+[data-md-color-scheme="default"] {
     --md-hue: 190;
     --md-accent-fg-color: #90c820;
 
