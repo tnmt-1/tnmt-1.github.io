@@ -50,6 +50,7 @@ nav:
     - 🏠 Home:
           - index.md
           - about.md
+          - resume.md
     - 📝 Blog:
           - ...
 
