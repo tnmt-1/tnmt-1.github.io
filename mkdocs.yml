@@ -1,5 +1,6 @@
 site_name: tnmt
 site_url: https://tnmt-1.github.io/
+site_description: プログラミング関連の知識を中心にアウトプットします
 repo_url: https://github.com/tnmt-1/tnmt-1.github.io
 repo_name: tnmt-1.github.io
 copyright: Copyright &copy; tnmt
@@ -57,6 +58,7 @@ theme:
           toggle:
               icon: material/weather-sunny
               name: Switch to system preference
+    logo: assets/images/logo.png
 
 # ナビから除外
 not_in_nav: |
@@ -107,6 +109,7 @@ markdown_extensions:
     - md_in_html
     - toc:
           permalink: true
+    - meta
 
 # 拡張JavaScript
 extra_javascript:
