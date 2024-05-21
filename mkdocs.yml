@@ -123,8 +123,5 @@ extra:
         - icon: fontawesome/brands/tumblr
           link: https://tumblr.com/tnmt-1
           name: tnmt on Tumblr
-    analytics:
-        provider: google
-        property: G-GFRQKQX2B9
 
 use_directory_urls: false
