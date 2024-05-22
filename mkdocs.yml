@@ -76,6 +76,7 @@ plugins:
               - tags
     - glightbox
     - awesome-pages
+    - inline-select-svg
 
 # マークダウン拡張
 markdown_extensions:
