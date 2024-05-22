@@ -2,11 +2,15 @@
   This file was automatically generated - do not edit
 -#}
 <div class="md-copyright">
+  {#-
   {% if config.extra.analytics %}
     <div>
       当サイトではGoogle Analyticsを使用しています。
     </div>
   {% endif %}
+  -#}
+  {#- analyticsプラグインを使わずに設定している -#}
+  <div>当サイトではGoogle Analyticsを使用しています。</div>
   {% if config.copyright %}
     <span class="md-copyright__highlight">
       {{ config.copyright }}
