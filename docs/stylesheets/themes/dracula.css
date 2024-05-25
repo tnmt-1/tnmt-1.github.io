@@ -10,15 +10,15 @@
     --purple: #9580ff;
     --pink: #ff80bf;
 
-    --md-hue: 230;
     --md-primary-fg-color: var(--white);
     --md-accent-fg-color: var(--pink);
 
-    --md-default-fg-color: hsla(var(--md-hue), 75%, 95%, 1);
-    --md-default-fg-color--light: hsla(var(--md-hue), 75%, 90%, 0.62);
-    --md-default-fg-color--lighter: hsla(var(--md-hue), 75%, 90%, 0.32);
-    --md-default-fg-color--lightest: hsla(var(--md-hue), 75%, 90%, 0.12);
+    --md-default-fg-color: hsla(60, 30%, 96%, 1);
+    --md-default-fg-color--light: hsla(60, 30%, 96%, 0.62);
+    --md-default-fg-color--lighter: hsla(60, 30%, 96%, 0.32);
+    --md-default-fg-color--lightest: hsla(60, 30%, 96%, 0.12);
 
+    --md-hue: 230;
     --md-default-bg-color: hsla(var(--md-hue), 15%, 30%, 1);
     --md-default-bg-color--light: hsla(var(--md-hue), 15%, 30%, 0.54);
     --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 30%, 0.26);
@@ -42,10 +42,9 @@
     --md-code-hl-variable-color: var(--md-default-fg-color--light);
 
     /* typeset */
-    --md-typeset-color: var(--greyTernary);
-    --md-typeset-a-color: var(--white);
-    --md-typeset-table-color: var(--greyTernary--light);
-    --md-typeset-mark-color: #9580ff;
+    --md-typeset-color: var(--white);
+    --md-typeset-a-color: var(--purple);
+    --md-typeset-table-color: var(--greyTernary);
 
     /* footer */
     --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
@@ -54,6 +53,10 @@
 .md-header {
     /* background: linear-gradient(var(--gradientDegree), #9580ff, #87d4f1); */
     background: linear-gradient(#9580ff, #87d4f1);
+}
+
+.md-logo {
+    color: var(--green);
 }
 
 nav.md-tabs {

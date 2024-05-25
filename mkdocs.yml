@@ -1,4 +1,4 @@
-site_name: tnmt
+site_name: 淡々と
 site_url: https://tnmt-1.github.io/
 site_description: プログラミング関連の知識を中心にアウトプットします
 repo_url: https://github.com/tnmt-1/tnmt-1.github.io
@@ -43,7 +43,9 @@ theme:
         scheme: default
         primary: custom
         accent: custom
-    logo: assets/images/logo.png
+    icon:
+        logo: material/tree
+    favicon: assets/images/tree.svg
 
 # ナビ
 nav:
