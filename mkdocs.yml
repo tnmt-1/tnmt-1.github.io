@@ -114,6 +114,7 @@ extra_javascript:
 # 拡張CSS
 extra_css:
     - stylesheets/extra.css
+    - stylesheets/themes/dracula.css
 
 # 拡張
 extra:
