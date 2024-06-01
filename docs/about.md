@@ -1,5 +1,5 @@
 
-# :man_technologist: About
+# About
 
 ## 趣味・関心
 

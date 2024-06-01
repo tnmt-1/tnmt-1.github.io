@@ -49,12 +49,13 @@ theme:
 
 # ナビ
 nav:
-    - 🏠 Home:
+    - Home:
           - index.md
           - about.md
           - resume.md
-    - 📝 Blog:
-          - ...
+    - ... | システム開発/**/*
+    - Blog:
+          - ... | blog/*
 
 # ナビから除外
 not_in_nav: |
@@ -103,7 +104,7 @@ markdown_extensions:
           custom_fences:
               - name: mermaid
                 class: mermaid
-                format: !!python/name:mermaid2.fence_mermaid
+                format: !!python/name:mermaid2.fence_mermaid_custom
     - md_in_html
     - toc:
           permalink: true
@@ -117,6 +118,7 @@ extra_javascript:
 extra_css:
     - stylesheets/extra.css
     - stylesheets/themes/dracula.css
+    - https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css
 
 # 拡張
 extra:

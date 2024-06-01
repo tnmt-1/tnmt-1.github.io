@@ -1,4 +1,4 @@
-# :simple-rescuetime: Resume
+# Resume
 
 ## Summary
 
