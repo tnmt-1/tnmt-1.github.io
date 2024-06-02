@@ -10,9 +10,8 @@
 
 ## Installation
 
-``shell
-curl -sSf <https://rye.astral.sh/get> | bash
-
+```shell
+curl -sSf https://rye.astral.sh/get | bash
 ```
 
 ### Updating Rye
