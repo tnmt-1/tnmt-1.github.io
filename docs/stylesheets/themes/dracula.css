@@ -48,11 +48,19 @@
 
     /* footer */
     --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+
+    /* background linear-gradient */
+    --linear-gradient: linear-gradient(
+        var(--gradientDegree),
+        #9580ff,
+        #9383e2,
+        #6791e0,
+        #87d4f1
+    );
 }
 
 .md-header {
-    background: linear-gradient(var(--gradientDegree), #9580ff, #9383e2, #6791e0, #87d4f1);
-    /* background: linear-gradient(#9580ff, #87d4f1); */
+    background: var(--linear-gradient);
 }
 
 .md-logo {
@@ -65,7 +73,7 @@ nav.md-tabs {
 
 @media screen and (max-width: 76.2344em) {
     .md-nav--primary .md-nav__title[for="__drawer"] {
-        background: linear-gradient(var(--gradientDegree), #9580ff, #9383e2, #6791e0, #87d4f1);
+        background: var(--linear-gradient);
         color: var(--md-primary-fg-color);
         font-weight: 700;
     }
@@ -76,6 +84,6 @@ nav.md-tabs {
         background-color: var(--md-default-bg-color);
         color: var(--md-primary-fg-color);
         display: block;
-        padding: 0 .2rem;
+        padding: 0 0.2rem;
     }
 }
