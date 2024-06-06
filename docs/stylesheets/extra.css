@@ -11,6 +11,10 @@
     margin-top: 0;
 }
 
+.md-typeset h2:not(.md-post__content h2) {
+    margin: 2.4em 0 .64em;
+}
+
 .md-typeset h2:not(.md-post__content h2):after {
     content: "";
     display: block;
