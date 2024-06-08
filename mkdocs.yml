@@ -45,7 +45,7 @@ theme:
         accent: custom
     icon:
         logo: material/tree
-    favicon: assets/images/tree.svg
+    favicon: assets/images/tree.png
 
 # ナビ
 nav:
