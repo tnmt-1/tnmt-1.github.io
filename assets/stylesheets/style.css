@@ -532,3 +532,25 @@ body {
 .example .row {
     margin-bottom: 0;
 }
+
+a.misskey:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: url("../images/misskey.png") center center no-repeat;
+    background-size: contain;
+    vertical-align: -7px;
+}
+
+a.tumblr:before {
+    content: "";
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+    background: url("../images/Tumblr.png") center center no-repeat;
+    background-size: contain;
+    vertical-align: -7px;
+}
