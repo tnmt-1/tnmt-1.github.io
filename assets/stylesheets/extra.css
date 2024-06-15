@@ -1,0 +1,68 @@
+:root {
+    --md-text-font: Inter, 源柔ゴシックL, Roboto, sans-serif;
+    --md-code-font: Ubuntu mono, Roboto mono;
+}
+
+/*
+ * 見出し2に下線をつける
+ * ブログの記事一覧以外が対象
+ */
+.md-typeset h1 + h2:not(.md-post__content h2) {
+    margin-top: 0;
+}
+
+.md-typeset h2:not(.md-post__content h2) {
+    margin: 2.4em 0 .64em;
+}
+
+.md-typeset h2:not(.md-post__content h2):after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: var(--linear-gradient);
+    margin-top: 0.4em;
+}
+
+/* 見出し3 */
+.md-typeset h2 + h3 {
+    margin-top: 1.6em;
+}
+
+.md-typeset h3:after {
+    content: "";
+    display: block;
+    height: 1px;
+    background: linear-gradient(
+        to right,
+        var(--md-default-fg-color--lighter),
+        transparent
+    );
+    margin-top: 0.4em;
+}
+
+/* 見出し4 */
+.md-typeset h4 {
+    position: relative;
+    padding-left: 1.4em;
+}
+
+.md-typeset h4:before {
+    font-family: "Font Awesome 5 Free";
+    content: "\f111";
+    font-weight: 900;
+    position: absolute;
+    font-size: 1em;
+    left: 0;
+    color: var(--greyTernary);
+}
+
+/* ナビの見出し3の段落を下げる */
+@media screen and (min-width: 76.25em) {
+    nav[data-md-level="1"]
+        .md-nav__item--section
+        > .md-nav
+        > .md-nav__list
+        > .md-nav__item {
+        padding-left: 5px;
+    }
+}

@@ -1,0 +1,89 @@
+[data-md-color-scheme="default"] {
+    --gradientDegree: 135deg;
+
+    /* color */
+    --cyan: #80ffea;
+    --green: #8affa0;
+    --white: #f8f8f2;
+    --greyTernary: #b6b9c9;
+    --greyTernary--light: #b6b9c980;
+    --purple: #9580ff;
+    --pink: #ff80bf;
+
+    --md-primary-fg-color: var(--white);
+    --md-accent-fg-color: var(--pink);
+
+    --md-default-fg-color: hsla(60, 30%, 96%, 1);
+    --md-default-fg-color--light: hsla(60, 30%, 96%, 0.62);
+    --md-default-fg-color--lighter: hsla(60, 30%, 96%, 0.32);
+    --md-default-fg-color--lightest: hsla(60, 30%, 96%, 0.12);
+
+    --md-hue: 230;
+    --md-default-bg-color: hsla(var(--md-hue), 15%, 30%, 1);
+    --md-default-bg-color--light: hsla(var(--md-hue), 15%, 30%, 0.54);
+    --md-default-bg-color--lighter: hsla(var(--md-hue), 15%, 30%, 0.26);
+    --md-default-bg-color--lightest: hsla(var(--md-hue), 15%, 30%, 0.07);
+
+    /* code */
+    --md-code-fg-color: hsla(var(--md-hue), 18%, 86%, 1);
+    --md-code-bg-color: hsla(var(--md-hue), 15%, 15%, 1);
+    --md-code-hl-color: #4287ff26;
+    --md-code-hl-number-color: #e6695b;
+    --md-code-hl-special-color: #f06090;
+    --md-code-hl-function-color: #c973d9;
+    --md-code-hl-constant-color: #9383e2;
+    --md-code-hl-keyword-color: #6791e0;
+    --md-code-hl-string-color: #2fb170;
+    --md-code-hl-name-color: var(--md-code-fg-color);
+    --md-code-hl-operator-color: var(--md-default-fg-color--light);
+    --md-code-hl-punctuation-color: var(--md-default-fg-color--light);
+    --md-code-hl-comment-color: var(--md-default-fg-color--light);
+    --md-code-hl-generic-color: var(--md-default-fg-color--light);
+    --md-code-hl-variable-color: var(--md-default-fg-color--light);
+
+    /* typeset */
+    --md-typeset-color: var(--white);
+    --md-typeset-a-color: var(--purple);
+    --md-typeset-table-color: var(--greyTernary);
+
+    /* footer */
+    --md-footer-bg-color: hsla(var(--md-hue), 15%, 12%, 0.87);
+
+    /* background linear-gradient */
+    --linear-gradient: linear-gradient(
+        var(--gradientDegree),
+        #9580ff,
+        #9383e2,
+        #6791e0,
+        #87d4f1
+    );
+}
+
+.md-header {
+    background: var(--linear-gradient);
+}
+
+.md-logo {
+    color: var(--green);
+}
+
+nav.md-tabs {
+    background-color: #21222c;
+}
+
+@media screen and (max-width: 76.2344em) {
+    .md-nav--primary .md-nav__title[for="__drawer"] {
+        background: var(--linear-gradient);
+        color: var(--md-primary-fg-color);
+        font-weight: 700;
+    }
+}
+
+@media screen and (max-width: 59.9844em) {
+    .md-nav__source {
+        background-color: var(--md-default-bg-color);
+        color: var(--md-primary-fg-color);
+        display: block;
+        padding: 0 0.2rem;
+    }
+}
