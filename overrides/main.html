@@ -1,8 +1,6 @@
 {% extends "base.html" %}
 
 {% block extrahead %}
-  <meta name="msvalidate.01" content="5A909E99D5C378FCD816F79E4B87C71E" />
-
   {% set title = config.site_name %}
   {% if page and page.meta and page.meta.title %}
     {% set title = page.meta.title ~ " - " ~ title %}
@@ -28,8 +26,6 @@
   <meta name="twitter:description" content="{{ description }}"/>
   <meta name="twitter:card" content="summary"/>
   <meta name="twitter:image" content="{{ config.site_url }}assets/images/tree.png"/>
-
-  <meta name="google-site-verification" content="PHPldOdkxAotfabZ7YtSxiTMLRezmdJZToVCNN3Sx_w" />
 
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-GFRQKQX2B9"></script>
